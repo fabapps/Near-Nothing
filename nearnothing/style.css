@@ -1,0 +1,230 @@
+/*
+Theme Name:	Near Nothing
+Theme URI: http://fabapps.com/wordpress/nearnothing 
+Description: Near Nothing is a bare bones theme with minimal markup and no images. It's made from scratch and consists of fewer than 500 lines of commented code. 
+Version: 1.0
+Author: Christian MacAuley
+Author URI: http://fabapps.com
+Tags: white, black, light, two-columns, left-sidebar, fixed-width, custom-menu, threaded-comments, sticky-post 
+*/
+
+/* basic reset */
+	* { margin: 0; padding: 0; }
+	h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, cite, table { margin-bottom: 0.8em; }
+	ul, ol, li { margin-left: 0.5em; }
+
+/* page wrappers */
+	body {
+		text-align: center;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		color: #000;
+	}
+	#wrapper {
+		display: block;  	
+		width:980px;
+		margin:0px auto;
+	}
+	#wrapper2 {
+		text-align: left; 
+	}
+
+/* common tags */
+
+/* links */
+	a:link {
+		color: #000;	
+	}
+	a:visited {
+		color: #222;	
+	}
+	a:hover {
+		background-color: #FF9;	
+	}
+	/* prettier images */
+	img { border: none; }
+	/* blockquote */
+	blockquote, cite {
+		font-size: 0.9em;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+/* main contents */
+	#main { }
+	#content {
+		width: 73%;
+		float: right;
+		padding: 20px 0 20px 30px;
+		margin: 0 0 20px 10px;
+		border-left: 1px solid #eee;
+		min-height: 500px;
+	}
+	.postmeta {
+		clear: both;	
+	}
+
+/* header */
+	#header {
+		margin: 30px 0 20px 0;
+		border-bottom: 1px solid #eee;
+	}
+	
+	/* posts */
+	.postmeta, .postnavigation {
+		font-size: 0.9em;
+	}
+	body.blog .post .postmeta, body.archive .post .postmeta, body.search .post {
+		border-bottom: 1px solid #eee;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+	}
+	body.blog .post:last-child .postmeta, body.archive .post:last-child .postmeta {
+		border-bottom: none;
+	}
+
+/* sidebar */
+	#sidebar {
+		width: 20%;
+		float: left;
+		padding: 20px 5px 20px 5px;
+		margin-bottom: 20px;
+		font-size: 0.9em;
+	}
+	#sidebar ul { 
+		list-style-type: none;
+		margin: 0;
+	}
+	#sidebar li {
+		list-style-type: none;
+		margin-left: 0;
+	}
+	#sidebar li li {
+		list-style-type: disc;
+		margin-left: 18px;
+	}
+	#sidebar ul {
+	}
+	#sidebar li ul ul {
+		margin-left: 0;
+	}
+	#sidebar h2 {
+		padding-bottom: 0.1em;
+		margin: 0;
+	}
+	#sidebar .widget {
+		margin-bottom: 20px;	
+	}
+
+/* footer */
+	#footer {
+		display: block;
+		clear: both;
+		border-top: 1px solid #eee;
+		padding: 10px 0 10px 0;
+	}
+	#footer p {
+		text-align: center;	
+		font-size: 0.9em;
+	}
+
+/* topnav and footer nav */
+	#topnav ul, #footer ul {
+		list-style-type: none; 
+		text-align: left;
+		margin: 0;
+	}
+	#topnav li, #footer li {
+		list-style-type: none; 
+		display: inline; 
+		padding-left: 0.5em;
+	}
+	#topnav li ul, #footer li ul {
+		display: inline;
+		padding: 0;
+	}
+	#bottomnav {
+		padding-bottom: 20px;
+	}
+
+/* comments */
+	#comments {
+		font-size: 0.9em;	
+	}
+	#comments ol {
+		margin: 0;
+	}
+	#comments li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	#comments li ul {
+		padding-left: 10px;
+		margin-bottom: 0;
+	}
+	#comments .comment-body {
+		padding: 10px 10px 0 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	#comments .comment-meta {
+		font-size: 0.8em;
+		padding-bottom: 0.5em;
+	}
+	#comments .reply {
+		padding-bottom: 10px;
+		font-size: 0.8em;
+	}
+	#comments .thread-even {
+		background: #eee;	
+	}
+	#comments .thread-odd {
+		background: #ddd;	
+	}
+	#respond {
+		margin-top: 30px;
+		padding: 10px;
+	}
+	#respond label {
+		display: block;
+	}
+	#respond input, #respond textarea {
+		font-family: Helvetica, sans-serif; 
+		font-size: 10pt;
+}
+
+/* wordpress classes */
+	.alignleft {
+		float: left; 
+		padding: 2px 8px 8px 2px;
+	}
+	.alignright {
+		float: right;
+		padding: 2px 2px 8px 8px;
+	}
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.wp-caption-text, .gallery-caption { 
+		color: #666; 
+		font-size: 0.8em; 
+		padding: 3px 0; 
+	}
+	.gallery {
+		padding: 10px 10px 25px 10px;
+	}
+
+/* customize search widget here */
+	.widget_search #searchform {
+	}
+	.widget_search #searchform label {
+		display: block;
+	}
+	.widget_search #searchform #s {
+		width: 100px;
+	}
+	.widget_search #searchsubmit {	
+	}
+
